@@ -12,14 +12,12 @@ If you want to check the code for the resolution study, run the file `resolution
 
 # Changing Simulation Parameters
 
-Most simulation parameters can be conveniently changed in `SwiftPDE.ipynb` by creating an instance of the `equations.SchrodingerBCNonLinear` class with desired parameters and taking the desired number of time steps.
+Most simulation parameters can be conveniently changed in `SwiftPDE.ipynb` by changing the initial conditions, parameters boundary lenght and timestep in the second cell block. 
 
-We assume a square uniform domain, but the values and resolution of this domain can be adjusted by changing the variables `grid_x`, `grid_y`, and `resolution`.
+I assume a square uniform domain, but the values and resolution of this domain can be adjusted by changing the variables `N` and `L`.
 
 To change the ratio of the timestep size to grad spacing $\alpha = dt/dx$, the variable `alpha` can be changed.
 
-To monitor the simulation time, the instance variable `t` can be accessed and compared against desired values. Or more simply, the variable `T` in `SchrodingerPDE.ipynb` can be used to set the final time.
+To change the initial conditions, the definition of `INITIAL` can be changed in the second block of code.
 
-To change the initial conditions, the definition of `IC` can be changed.
-
-Changing the boundary conditions is a little less straightforward. To use different boundary conditions, go to `equations.py` and create a copy of the `SchrodingerBCNonLinear` and change the function `BC` in the `Reaction` sub-class to fit your needs. An example of this can be seen in the class `SchrodingerBCLinearSlit`. However, it must be noted that any boundary conditions will be set in addition to particle-in-box condition which is set implictly in the diffusion timestepper.
+In addition, you can select if you want a gif of your simulation to be saved in your directory, by doing `gif = true` or you prefer all the sliced photos by doing `gif = false`.
