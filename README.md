@@ -16,8 +16,6 @@ Most simulation parameters can be conveniently changed in `SwiftPDE.ipynb` by ch
 
 I assume a square uniform domain, but the values and resolution of this domain can be adjusted by changing the variables `N` and `L`.
 
-To change the ratio of the timestep size to grad spacing $\alpha = dt/dx$, the variable `alpha` can be changed.
-
 To change the initial conditions, the definition of `INITIAL` can be changed in the second block of code.
 
 In addition, you can select if you want a gif of your simulation to be saved in your directory, by doing `gif = true` or you prefer all the sliced photos by doing `gif = false`.
