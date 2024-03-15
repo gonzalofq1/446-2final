@@ -8,7 +8,7 @@ This is the the code for the final project for ESAM 446-2 with Prof. Daniel Leco
 To regenerate the simulations presented in our report `Numerical_Solution_for_the_Swift-Hohenberg_Equation.pdf`, simply run the scripts in `SwiftPDE.ipynb` using a Python Kernel. This Jupyter notebook includes the code for all of our simulations and visualizations 
 such as spectral.
 
-If you want to check the code for the resolution study, run the file "resolution study code.ipynb"
+If you want to check the code for the resolution study, run the file 'resolution study code.ipynb'
 
 # Changing Simulation Parameters
 
