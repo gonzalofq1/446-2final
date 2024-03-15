@@ -14,7 +14,7 @@ If you want to check the code for the resolution study, run the file `resolution
 
 Most simulation parameters can be conveniently changed in `SwiftPDE.ipynb` by changing the initial conditions, parameters boundary lenght and timestep in the second cell block. 
 
-I assume a square uniform domain, but the values and resolution of this domain can be adjusted by changing the variables `N` (resolution) and `L` (lenght).
+I assume a square uniform domain, but the values and resolution of this domain can be adjusted by changing the variables `N` (resolution) and `Len` (lenght).
 
 To change the initial conditions, the definition of `INITIAL` can be changed in the second block of code.
 
